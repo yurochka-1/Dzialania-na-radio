@@ -30,23 +30,50 @@ public class MainActivity extends AppCompatActivity {
         radioGreen = findViewById(R.id.radioButtonZielony);
         radioBlue = findViewById(R.id.radioButtonNiebieski);
         textView = findViewById(R.id.Napis);
-        button = findViewById(R.id.button);
 
-        button.setOnClickListener(
+
+
+
+        radioDuzy.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
                         if (radioDuzy.isChecked()){
                             textView.setTextSize(50);
-                        }if (radioMaly.isChecked()){
+                        }
+                    }
+                }
+        );
+        radioMaly.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if (radioMaly.isChecked()){
                             textView.setTextSize(10);
-                        }if (radioGreen.isChecked()){
+                        }
+                    }
+                }
+        );
+        radioGreen.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if (radioGreen.isChecked()){
                             textView.setTextColor(Color.GREEN);
-                        }if (radioBlue.isChecked()){
+                        }
+                    }
+                }
+        );
+        radioBlue.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if (radioDuzy.isChecked()){
                             textView.setTextColor(Color.BLUE);
                         }
                     }
                 }
         );
+
     }
 }
