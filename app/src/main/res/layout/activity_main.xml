@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/Napis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Napis" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rozmiar" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/radioButtonDuzy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="duży" />
+
+        <RadioButton
+            android:id="@+id/radioButtonMaly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="mały" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kolor" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/radioButtonZielony"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="zielony" />
+
+        <RadioButton
+            android:id="@+id/radioButtonNiebieski"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="niebieski" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Zatwierdz" />
+
+</LinearLayout>
